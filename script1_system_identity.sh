@@ -1,14 +1,21 @@
 #!/bin/bash
+# Script 1: System Identity Report
+# Author: SANJAY P T
+# Purpose: Display basic Linux system information
 
 STUDENT_NAME="SANJAY P T"
 SOFTWARE_CHOICE="Linux Kernel"
 
-KERNEL=$(uname -r)
-USER_NAME=$(whoami)
-UPTIME=$(uptime -p)
-DATE=$(date)
-DISTRO=$(cat /etc/os-release | grep PRETTY_NAME | cut -d= -f2)
+# Collect system information
+KERNEL=$(uname -r)          # Kernel version
+USER_NAME=$(whoami)         # Current user
+UPTIME=$(uptime -p)         # System uptime
+DATE=$(date)                # Current date and time
 
+# Extract distribution name from OS release file
+DISTRO=$(grep PRETTY_NAME /etc/os-release | cut -d= -f2)
+
+# Print formatted output
 echo "================================"
 echo "Open Source Audit — $STUDENT_NAME"
 echo "================================"
