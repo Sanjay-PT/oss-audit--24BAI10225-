@@ -140,4 +140,3 @@ Ensure correct file paths while running the scripts.
 ## 🔗 Submission
 
 This repository is submitted as part of the OSS Capstone Project via VITyarthi portal.
-# OSS Audit Project — Linux Kernel
